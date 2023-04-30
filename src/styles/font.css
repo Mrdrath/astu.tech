@@ -1,0 +1,5 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/NunitoSansRegular.ttf"); font-family : "Nunito Sans"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/NunitoSansBold.ttf"); font-family : "Nunito Sans"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PublicSansRegular.ttf"); font-family : "Public Sans"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : bold; src: url("assets/fonts/NunitoSansSemiBold.ttf"); font-family : "Nunito Sans"; font-weight : 600;  }
