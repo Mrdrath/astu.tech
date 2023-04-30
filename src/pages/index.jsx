@@ -5,39 +5,18 @@ import { Img, Text, Button, CheckBox, List, Line } from "components";
 const InvoicePage = () => {
   return (
     <>
+
+
       <div className="bg-white_A700 flex flex-col font-nunitosans items-center justify-start mx-auto w-full">
         <div className="flex md:flex-col flex-row gap-[33px] items-center justify-between max-w-[1706px] mx-auto md:px-5 w-full">
+
+
+
+{/* Left side bar having details related to Document Generation, Document Storage, Invoice Management and Invoive summary */}
           <aside className="flex flex-col md:hidden justify-start w-[350px]">
             <div className="flex md:h-[1111px] h-[1117px] justify-end relative w-full">
-              {/* <div className="flex flex-col md:gap-10 gap-[854px] h-full items-start justify-start mb-8 ml-8 mt-auto w-[67%]">
-                <div className="flex flex-col items-center justify-start w-full">
-                  <div className="flex flex-row gap-[13px] items-center justify-start w-full">
-                    <Img
-                      src="images/img_createnewfolder.svg"
-                      className="h-6 w-6"
-                      alt="createnewfolder"
-                    />
-                    <Text
-                      className="capitalize font-normal not-italic text-gray_100 text-left w-auto"
-                      as="h2"
-                      variant="h2"
-                    >
-                      Document Generation
-                    </Text>
-                  </div>
-                </div>
-                <div className="bg-white_A700 flex flex-col h-[34px] items-center justify-start p-0.5 rounded-[50%] w-[34px]">
-                  <div className="flex flex-col h-[30px] items-center justify-start w-[30px]">
-                    <Img
-                      src="images/img_settings.svg"
-                      className="h-[30px] rounded-[1px] w-[30px]"
-                      alt="settings"
-                    />
-                  </div>
-                </div>
-              </div> */}
               <div className="absolute bg-teal_900 flex flex-col h-full inset-[0] items-center justify-center m-auto p-6 sm:px-5 w-full">
-                <div className="flex flex-col justify-start mb-[509px] mt-4 w-full">
+                <div className="flex flex-col justify-start items-start mb-[509px] mt-4 w-full">
                   <Img
                     src="images/img_finalfilecashwise.svg"
                     className="h-[21px] ml-0.5 md:ml-[0] w-auto"
@@ -57,7 +36,7 @@ const InvoicePage = () => {
                       </div>
                       <div className="flex flex-col items-start justify-start inline-block ml-[22px] w-auto">
                         <Text
-                          className="font-nunitosans mt-1 ssnot-italic text-gray_100 text-left w-auto"
+                          className="font-nunitosans mt-1 ssnot-italic text-gray_100 text-left whitespace-nowrap w-auto"
                           as="h3"
                           variant="h3"
                         >
@@ -186,6 +165,10 @@ const InvoicePage = () => {
               </div>
             </div>
           </aside>
+
+
+
+{/* Top nav bar of Invoice Summary */}
           <div className="flex flex-1 flex-col items-start justify-start w-full">
             <div className="flex flex-row md:gap-10 items-center justify-between w-full">
               <div className="flex flex-col items-center justify-start w-auto">
@@ -205,6 +188,10 @@ const InvoicePage = () => {
                 A
               </Text>
             </div>
+
+
+
+{/* Active and Deleted clients info  */}
             <div className="bg-white_A700 flex flex-col items-center justify-start mt-8 p-8 sm:px-5 rounded-[12px] shadow-bs w-full">
               <div className="flex flex-col items-start justify-start mb-[199px] mt-4 w-full">
                 <div className="flex flex-row gap-[59px] items-center justify-start w-[22%] md:w-full">
@@ -231,10 +218,13 @@ const InvoicePage = () => {
                 >
                   Delete
                 </Button>
+
+
+{/* heading details of the company Invoice */}
                 <div className="bg-gray_100 flex sm:flex-col flex-row sm:gap-5 items-start justify-start mt-5 p-3.5 w-full">
                   <CheckBox
                     className="font-normal mb-1.5 sm:mt-0 mt-[9px] not-italic sm:pl-5 text-base text-blue_gray_900 text-left"
-                    inputClassName="h-[18px] mr-[5px] w-[18px]"
+                    inputClassName="h-[18px] mr-[32px] w-[18px]"
                     name="clientname"
                     id="clientname"
                     label="Client Name"
@@ -277,6 +267,10 @@ const InvoicePage = () => {
                     Country
                   </Text>
                 </div>
+
+
+
+{/* clients list details related to company name, mail id, location */}
                 <List
                   className="flex-col gap-[18.5px] grid items-center ml-3.5 md:ml-[0] mt-[13px] w-[98%]"
                   orientation="vertical"
@@ -635,6 +629,9 @@ const InvoicePage = () => {
                 </List>
               </div>
             </div>
+
+           
+{/* Add client & upload clients */}
             <div className="h-16 md:h-[83px] md:ml-[0] ml-[925px] mt-[19px] relative w-[31%] sm:w-full">
               <div className="absolute flex flex-col h-full inset-y-[0] items-center justify-start my-auto p-2.5 right-[0] self-stretch w-auto">
                 <Button
